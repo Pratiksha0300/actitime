@@ -1,0 +1,185 @@
+<html>
+<head>
+	<title> Yashodhara Super Speciality Hospital </title>
+	
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+	<script> 
+function appointment()                                    
+{ 
+    var a = document.forms["Form"]["fname"];               
+    var b = document.forms["Form"]["lname"];    
+    var c = document.forms["Form"]["email"];  
+    var d = document.forms["Form"]["mno"];  
+    var e = document.forms["Form"]["adate"]; 
+    //var f = document.forms["Form"]["gender"]; 
+    //var g = f.options[f.selectedIndex].value;
+      
+ 
+if (a.value == "")                                  
+    { 
+        window.alert("Please enter your firstname"); 
+        name.focus(); 
+        return false; 
+    }
+
+if (b.value == "")                               
+    { 
+        window.alert("Please enter your lastname"); 
+        name.focus(); 
+        return false; 
+    } 
+  
+if (c.value == "")                                   
+    { 
+        window.alert("Please enter a  e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+if (c.value.indexOf("@", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+
+if (c.value.indexOf(".", 0) < 0)                 
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+if (d.value == "")                           
+    { 
+        window.alert("Please enter your mobile no"); 
+        phone.focus(); 
+        return false;
+    } 
+if (d.value.length != 10 )                           
+    { 
+        window.alert("Please enter your valid mobile no"); 
+        phone.focus(); 
+        return false;
+    } 
+if (document.getElementById("Gender").value=="0")                  
+    { 
+        window.alert("Please select your gender"); 
+        name.focus(); 
+        return false; 
+    }
+if (e.value == "")                           
+    { 
+        window.alert("Please enter your appointment date"); 
+        phone.focus(); 
+        return false; 
+    }
+else
+{
+	alert("You made your appointment successfully\nThank you!!");
+	 return true; 
+}  
+
+
+
+
+}</script> 
+  
+
+
+</head>
+<body>
+	
+	<div class="top">
+		<div>
+		 Contact Us +91 217-2323001 / 02 / 03| http://yashodharahospital.com/#
+                   
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td width="600px" style="font-size:50px;font-family:forte;"> <font color="#428bca"> Yashodhara   </font><font color="#000"> Super Speciality Hospital </font> </td>
+					<td> <br> <br>
+						<font size="4px"> 
+							<a href="index.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a><br><br> 
+							<a href="contact.html">CONTACT US</a>
+                                                        <a href="register.html">REGISTER HERE</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	
+<div>
+<br><br><br><br><br>
+<center>
+				<td width="500px"> <font size="05" color="red">Make an Appointment </font></td> 
+		<form name="Form" action="" onsubmit="return appointment()" method="post"> <br><br> 		
+				<table>
+										
+					<tr>
+						<td width="500px"> </td>
+						<td>	<input type="text" placeholder="First Name" name="fname" maxlength= "10">
+						<td> 	<input type="text" placeholder="Last Name" name="lname" maxlength="10">
+					</tr>
+					<tr height="30px">
+						
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td>	<input type="text" placeholder="Email Id" name="email">
+						<td> 	<input type="number" placeholder="Mobile No" name="mno">
+					</tr>
+					
+					<tr height="30px">
+						
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td>	  <select id="Gender" > <option value="0"> --Gender-- </option><option value="1"> Male </option> <option value="2"> Female </option> </select>
+						<td> Appointment Date	<input type="date" placeholder="appointment date" name="adate">
+					</tr>
+					
+						<tr height="30px">
+						
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td colspan="2">MESSAGE 	<textarea placeholder="Message"> </textarea>
+					</tr>
+					
+						<tr height="30px">
+						
+					</tr>
+					<tr>
+						<td width="500px"> </td>
+						<td colspan="2"> 
+                                                 
+
+                                          <button >SUBMIT</button>
+
+					</tr>
+				</table>
+			</center>	
+		</div>
+	
+
+ 	
+	
+	
+	
+	
+	<div class="nav_down">
+		<div>
+		 &copy; 2015 Yashodhara Hospitals All rights reserved | Powered By Astralkreations.com
+		</div>
+	</div>
+</body>
+</html>	
